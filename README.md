@@ -17,4 +17,34 @@ Uma aplicação web simples feita com **Flask + SQLite** para simular uma loja d
 ---
 
 ## 📂 Estrutura do projeto
+loja_bolos/
+├── app.py # Aplicação Flask principal
+├── criar_banco.py # Script para criação do banco SQLite
+├── database.db # Banco de dados SQLite (criado após rodar o script)
+├── static/
+│ ├── style.css # Estilo da página
+│ └── script.js # Lógica para adicionar ao carrinho
+├── templates/
+│ └── index.html # Página inicial da loja
+│ └── carrinho.html # (Opcional) Visualização do carrinho
+└── README.md
+
+
+Crie o ambiente virtual (opcional):
+
+python -m venv venv
+source venv/bin/activate      # Linux/Mac
+venv\Scripts\activate         # Windows
+
+
+💡 Funcionalidades
+Exibe bolos com imagens, nome e preço.
+
+Permite adicionar bolos ao carrinho (com banco SQLite).
+
+(Opcional) Rota para visualizar o carrinho.
+
+Estilo agradável com HTML e CSS.
+
+Código organizado e separado em templates, static e banco de dados.
 
